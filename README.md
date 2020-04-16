@@ -19,15 +19,21 @@ SonarQube integration with android studio project using local host
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        
         //Create object in kotlin
         var q = Question()
+        
         //now print Question first
         println(q.question)
         println("Answer given by you is:=${q.answer}")
         println("Correct Answer is:=${q.correctAnswer}")
+        
         //Change value of variable in class Question
         q.answer = "30"
         println("::TAG:: update Answer is ${q.answer}")
+        
+        //call method from class  Question
+        println("::TAG:: call method from Question ${q.display()}")
     }
 ```
 ```kotlin
