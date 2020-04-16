@@ -81,3 +81,27 @@ class Question {
         println("::TAG:: ${q?.answer} is ${q?.question}") // mendentory to check null before using object 
         //output== ::TAG:: null is null , because here null assign to object q 
  ```
+## when statement in Kotlin
+```kotlin
+
+```
+```kotlin
+//Question Class which method we will access in main class //when statement in Kotlin
+        val q = Question()
+        println("::TAG::${q.printResult()}")
+
+        //now change value of answer and see the result
+        q.answer="31"
+        println("::TAG::${q.printResult()}")
+class Question {
+        var answer = "22"
+        val correctAnswer = "31"
+
+        fun printResult() {
+            when (answer) {
+                correctAnswer -> println("::TAG:: u r right")
+                else -> println("::TAG:: u r wrong")
+            }
+        }
+    }
+```
