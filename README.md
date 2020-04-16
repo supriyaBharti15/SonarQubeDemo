@@ -15,7 +15,8 @@ SonarQube integration with android studio project using local host
  Log.d("::TAG::", "roll=" + roll)
  ```
 ## String Templates in Kotlin
-```kotlinoverride fun onCreate(savedInstanceState: Bundle?) {
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
