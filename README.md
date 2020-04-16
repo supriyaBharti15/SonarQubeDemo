@@ -73,3 +73,11 @@ class Question {
         println("::TAG::  $result1")
   //Output ==== System.out: ::TAG::  Answer Right
  ```
+ ## null handling in Kotlin
+ ```kotlin
+        //create object of Question class
+        //if we wants or know that any value can be null then we have to decleare value like below using ? symbol
+        val q: Question? = null
+        println("::TAG:: ${q?.answer} is ${q?.question}") // mendentory to check null before using object 
+        //output== ::TAG:: null is null , because here null assign to object q 
+ ```
