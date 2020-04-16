@@ -48,4 +48,28 @@ class Question {
         }
 
     }
-    ```
+ ```
+ ## if expression 
+ //compare two string using ==
+ ```kotlin
+ //Compare two string using ==
+        val result = if (q.answer == q.correctAnswer) {
+            "Answer is correct"
+        } else {
+            "Answer is incorrect"
+        }
+        println("::TAG::  $result")
+ //Output ::-- System.out: ::TAG::  Answer is correct
+
+```
+
+```kotlin
+        //compare using .euals() method
+        val result1 = if (q.answer.equals(q.correctAnswer)) {
+            "Answer Right"
+        } else {
+            "Answer Wrong"
+        }
+        println("::TAG::  $result1")
+  //Output ==== System.out: ::TAG::  Answer Right
+ ```
