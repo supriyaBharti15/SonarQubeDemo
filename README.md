@@ -52,7 +52,6 @@ class Question {
  ## if expression 
  //compare two string using ==
  ```kotlin
- //Compare two string using ==
         val result = if (q.answer == q.correctAnswer) {
             "Answer is correct"
         } else {
@@ -63,8 +62,9 @@ class Question {
 
 ```
 
+//compare using .equals() method
 ```kotlin
-        //compare using .euals() method
+        
         val result1 = if (q.answer.equals(q.correctAnswer)) {
             "Answer Right"
         } else {
